@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home, ErrorPage } from './pages'
+import { Home, ErrorPage } from './pages/Index'
 import { Navbar, Sidebar } from './components'
 import React from 'react'
 function App() {
@@ -8,7 +8,9 @@ function App() {
    <Navbar />
    <Sidebar />
    <Switch>
-    <Route exact path="/"><Home/></Route>
+    <Route exact path="/">
+     <Home />
+    </Route>
     <Route exact path="/"></Route>
     <Route exact path="/"></Route>
     <Route path="*">
