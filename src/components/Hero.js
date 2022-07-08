@@ -226,7 +226,7 @@ const Wrapper = styled.section`
   .section-center {
    border-radius: 2%;
    height: 45vh;
-   width: 45vh;
+   width: 40vh;
    padding: 0.25rem;
    background: url('https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg')
     no-repeat center center;
