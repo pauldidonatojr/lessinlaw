@@ -226,7 +226,7 @@ const Wrapper = styled.section`
   .section-center {
    border-radius: 2%;
    height: 45vh;
-   width: 45vh;
+   width: 48vh;
    padding: 0.25rem;
    background: url('https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg')
     no-repeat center center;
@@ -238,7 +238,7 @@ const Wrapper = styled.section`
   }
   .submit-btn {
    font-size: 1.2rem;
-   padding: 0.75rem 1rem;
+   padding: 0.50rem 0.50rem;
   }
   .content {
    height: 55vh;

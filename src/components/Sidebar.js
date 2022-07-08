@@ -16,7 +16,11 @@ const Sidebar = () => {
   <SidebarContainer>
    <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
     <Link to="/" className="linksclass" onClick={closeSidebar}>
-     <img src='' className="logo" alt="elpawl" />{' '}
+     <img
+      src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg"
+      className="logo"
+      alt="elpawl"
+     />{' '}
     </Link>
 
     <SocialButtons />
