@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import React, { useState, useEffect } from 'react'
 import { FaWindowClose } from 'react-icons/fa'
 import { useModalContext } from '../context/modal_context'
 import Contact from './Contact'
@@ -238,7 +238,7 @@ const Wrapper = styled.section`
   }
   .submit-btn {
    font-size: 1.2rem;
-   padding: 0.50rem 0.50rem;
+   padding: 0.5rem 0.5rem;
   }
   .content {
    height: 55vh;
