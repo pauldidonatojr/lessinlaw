@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home, ErrorPage } from './pages/Index'
+import { Home, ErrorPage } from './pages/index'
 import { Navbar, Sidebar } from './components'
 import React from 'react'
 function App() {

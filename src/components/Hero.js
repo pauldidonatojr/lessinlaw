@@ -247,10 +247,12 @@ const Wrapper = styled.section`
  @media only screen and (min-width: 600px) {
   .section-center {
    border-radius: 4%;
-   height: 50vh;
+   height: 55vh;
    padding: 3rem;
    width: 55vh;
-   background-color: purple;
+   background: url('https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg')
+    no-repeat center center;
+   background-size: cover;
   }
 
   .submit-btn {
@@ -263,14 +265,15 @@ const Wrapper = styled.section`
   }
 
   .content {
-   height: 40vh;
+   height: 60vh;
   }
  }
 
  @media only screen and (min-width: 768px) {
+  min-height: 35rem;
   .section-center {
-   height: 50vh;
-   width: 75vh;
+   height: 60vh;
+   width: 70vh;
    grid-gap: 1.5rem;
    border-radius: 2%;
    padding: 2.5rem;
@@ -281,7 +284,7 @@ const Wrapper = styled.section`
    font-size: 2.65rem;
   }
   .content {
-   height: 40vh;
+   height: 68vh;
   }
   .submit-btn {
    font-size: 1.25rem;
@@ -290,11 +293,12 @@ const Wrapper = styled.section`
  }
 
  @media (min-width: 992px) {
+  min-height: 40rem;
   p {
    margin-bottom: 0;
   }
   .section-center {
-   height: 55vh;
+   height: 70vh;
    width: 85vh;
 
    border-radius: 2%;
@@ -302,7 +306,7 @@ const Wrapper = styled.section`
    padding: 3.5rem;
   }
   .content {
-   height: 40vh;
+   height: 80vh;
   }
   .submit-btn {
    font-size: 1.25rem;
@@ -316,10 +320,11 @@ const Wrapper = styled.section`
   }
  }
  @media (min-width: 1280px) {
+  min-height: 45rem;
   .section-center {
    background-color: green;
-   height: 55vh;
-   width: 120vh;
+   height: 70vh;
+   width: 105vh;
 
    display: grid;
    align-items: flex-start;
@@ -329,6 +334,10 @@ const Wrapper = styled.section`
   .modal-container {
    height: 70vh;
   }
+  .submit-btn {
+   font-size: 1.25rem;
+   padding: 1rem 1.25rem;
+  }
   .header {
    font-size: 3em;
   }
@@ -336,9 +345,10 @@ const Wrapper = styled.section`
    grid-column: 5/6;
    grid-row: 1/2;
    width: 60vh;
-   height: 40vh;
-   margin-left: 20rem;
-   grid-gap: 2rem;
+   height: 20vh;
+   margin-left: 18rem;
+   grid-gap: 0.5rem;
+
   }
  }
 `
