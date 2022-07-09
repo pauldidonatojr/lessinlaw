@@ -12,18 +12,7 @@ const Hero = () => {
   <Wrapper>
    <div className="section-center">
     <div className="content">
-     {/* <h1
-      style={{
-       gridColumn: '1/3',
-       gridRow: '1/2',
-       textShadow: '2px 2px black',
-       color: 'var(--clr-white)',
-       fontWeight: 'bold',
-      }}
-      className="header"
-     >
-      Jeffrey R. Lessin & Associates, P.C.
-                 </h1> */}
+
 
      {/* <p
       style={{
@@ -293,24 +282,24 @@ const Wrapper = styled.section`
  }
 
  @media (min-width: 992px) {
-  min-height: 40rem;
+  min-height: 35rem;
   p {
    margin-bottom: 0;
   }
   .section-center {
-   height: 70vh;
-   width: 85vh;
+   height: 60vh;
+   width: 75vh;
 
    border-radius: 2%;
    background-color: pink;
    padding: 3.5rem;
   }
   .content {
-   height: 80vh;
+   height: 65vh;
   }
   .submit-btn {
    font-size: 1.25rem;
-   padding: 1rem 1.75rem;
+   padding: 0.5rem 1.25rem;
   }
   .modal-container {
    height: 70vh;
@@ -320,10 +309,10 @@ const Wrapper = styled.section`
   }
  }
  @media (min-width: 1280px) {
-  min-height: 45rem;
+  min-height: 35rem;
   .section-center {
    background-color: green;
-   height: 70vh;
+   height: 60vh;
    width: 105vh;
 
    display: grid;

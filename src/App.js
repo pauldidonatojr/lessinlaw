@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home, ErrorPage } from './pages/Index'
-import { Navbar, Sidebar } from './components'
+import { Home, ErrorPage } from './pages/index'
+import { Navbar, Sidebar, SearchBar } from './components'
 import React from 'react'
 function App() {
  return (
   <Router>
    <Navbar />
    <Sidebar />
+   <SearchBar />
    <Switch>
     <Route exact path="/">
      <Home />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { FaBars, FaCamera } from 'react-icons/fa'
+import { FaBars, FaCamera, FaPhoneAlt } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links, social } from '../utils/constants'
 import { useSideContext } from '../context/sidebar_context'
@@ -19,21 +19,38 @@ export default function Navbar() {
      </button>
     </div>
 
-
-    <button type="button" className="camera-toggle">
-     <FaCamera />
-    </button>
-
     <ul className="social-icons">
-     {social.map((socialIcon) => {
+     {/* {social.map((socialIcon) => {
       const { id, url, icon } = socialIcon
       return (
        <li key={id}>
         <a href={url}>{icon}</a>
        </li>
       )
-     })}
+     })} */}
+     <img
+      src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657399779/Jeffrey_R._Lessin_Associates_P.C._1_tyxapa.png
+"
+      style={{ width: '20rem' }}
+      className="logo"
+      alt="elpawl"
+     />
+     {/* <h4
+      style={{
+       textShadow: '2px 2px white',
+       color: 'var(--clr-black)',
+       fontWeight: 'bold',
+       fontFamily: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen`,
+      }}
+      className="header"
+     >
+      Jeffrey R. Lessin & Associates, P.C.
+     </h4> */}
     </ul>
+    <button type="button" className="camera-toggle">
+     <FaPhoneAlt />
+    </button>
+
     <ul className="nav-links">
      {links.map((link) => {
       const { id, text, url } = link
@@ -50,15 +67,12 @@ export default function Navbar() {
 }
 
 const NavContainer = styled.nav`
- height: 5rem;
+ height: 10rem;
  display: flex;
  align-items: center;
  justify-content: space-between;
  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px 5px;
 
- .social-icons {
-  display: none;
- }
  .faIcon:hover {
   opacity: 0.3;
  }
@@ -78,8 +92,6 @@ const NavContainer = styled.nav`
   img {
    width: 100px;
    margin-left: -15px;
-   margin-top: 75px;
-   margin-bottom: 50px;
   }
  }
  .nav-toggle {
@@ -107,30 +119,84 @@ const NavContainer = styled.nav`
 
  .nav-links a {
   text-transform: capitalize;
+  text-align: center;
   display: inline-block;
   font-weight: bold;
   margin-right: 0.5rem;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
+
   transition: var(--mainTransition);
  }
  .nav-links a:hover {
   color: var(--primaryColor);
  }
- .logo {
-  width: 3rem;
-  background-color: var(--clr-font);
- }
+
  .btn:hover {
   opacity: 0.3;
  }
- @media (min-width: 992px) {
-  .nav-toggle {
-   display: none;
+
+ @media (min-width: 576px) {
+  .social-icons {
+   padding: 0.5rem;
+   display: grid;
+   justify-content: center;
+   align-items: center;
   }
-  .camera-toggle {
+ }
+
+ @media only screen and (max-width: 600px) {
+  .social-icons {
+   padding: 0.15rem;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+
+   h4 {
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+   }
+  }
+ }
+
+ @media only screen and (min-width: 600px) {
+  .social-icons {
+   padding: 0.25rem;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   h4 {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+   }
+  }
+ }
+
+ @media only screen and (min-width: 768px) {
+  .nav-links {
+   grid-column: 1/3;
+   grid-row: 2/3;
+  }
+  .social-icons {
+   padding: 0.15rem;
+   margin-left: 5rem;
+   margin-right: 5rem;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   grid-column: 1/3;
+   grid-row: 1/2;
+   h4 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+   }
+  }
+ }
+
+ @media (min-width: 1050px) {
+  height: 10rem;
+  .nav-toggle {
    display: none;
   }
 
@@ -151,11 +217,31 @@ const NavContainer = styled.nav`
    grid-template-columns: auto 1fr auto;
    align-items: center;
    justify-content: center;
+   grid-gap: 0.5rem;
   }
   .search-input {
    width: 30rem;
   }
+  .nav-links {
+   grid-column: 1/2;
+   grid-row: 1/2;
+  }
+
   .social-icons {
+   padding: 0.15rem;
+
+   display: grid;
+   justify-content: center;
+   align-items: center;
+
+   grid-column: 1/2;
+   grid-row: 1/2;
+   h4 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+   }
+  }
+  /* .social-icons {
    display: flex;
    li {
     margin-left: 1rem;
@@ -166,7 +252,7 @@ const NavContainer = styled.nav`
   }
   .social-icons a:hover {
    color: grey;
-  }
+  } */
   .nav-links {
    display: flex;
    justify-content: center;
@@ -182,6 +268,28 @@ const NavContainer = styled.nav`
     &:hover {
      border-bottom: 2px solid var(--clr-primary-7);
     }
+   }
+  }
+ }
+
+ @media (min-width: 1280px) {
+  .nav-links {
+   grid-column: 1/3;
+   grid-row: 2/3;
+  }
+  .social-icons {
+   padding: 0.15rem;
+   margin-left: 20rem;
+   margin-right: 20rem;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+
+   grid-column: 2/3;
+   grid-row: 1/2;
+   h4 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
    }
   }
  }

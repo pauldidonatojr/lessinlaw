@@ -15,25 +15,37 @@ export const links = [
  },
  {
   id: 1,
-  text: 'About',
+  text: 'Firm Overview',
   url: '/about',
  },
 
  {
   id: 2,
-  text: 'media',
+  text: 'Practice Areas Overview',
   url: '/videos',
  },
  {
   id: 3,
-  text: 'contact',
+  text: 'Attorney Profiles',
   url: '/contact',
  },
  {
   id: 4,
-  text: 'Add Foods',
+  text: 'Resource Links',
   url: '/Addfood',
  },
+ {
+  id: 5,
+  text: 'Communities',
+  url: '/Addfood',
+ },
+ {
+  id: 6,
+  text: 'Contact Us',
+  url: '/Addfood',
+ },
+
+
 ]
 
 export const services = [

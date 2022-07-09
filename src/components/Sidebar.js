@@ -20,11 +20,10 @@ const Sidebar = () => {
       src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg"
       className="logo"
       alt="elpawl"
-     />{' '}
+     />
     </Link>
 
     <SocialButtons />
-
     <ul className="links">
      {links.map(({ id, text, url }) => {
       return (
@@ -122,4 +121,3 @@ const SidebarContainer = styled.div`
 `
 
 export default Sidebar
-
