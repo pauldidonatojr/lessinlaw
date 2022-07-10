@@ -12,7 +12,7 @@ const Profiles = () => {
       src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657479579/Attorney_Profiles_1_e9fe6q.png
 
 "
-      className="logo"
+      className="logo1"
       alt="elpawl"
      />
     </div>
@@ -57,7 +57,7 @@ const Wrapper = styled.section`
  height: 355vh;
  padding: 1.5rem;
 
- img {
+ .logo {
   width: 100%;
   display: block;
   object-fit: cover;
@@ -122,8 +122,8 @@ const Wrapper = styled.section`
   align-items: center;
   justify-content: center;
 
-  .logo {
-   width: 425px;
+  .logo1 {
+   width: 100%;
    display: block;
    object-fit: cover;
    height: 295px;
