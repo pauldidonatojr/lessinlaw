@@ -8,10 +8,15 @@ export default function PrimarySearchAppBar() {
   <Wrapper className="searchbar-1">
    <div className="div-1">
     <ul>
-     <li> Safety</li>
-     <li> Resources </li>
-                 <li> Complaints </li>
-                 
+     <li> motor vehicle </li>
+     <li> slip and fall </li>
+     <li> fire loss </li>
+
+     <li className="li4"> Emergencies</li>
+     <li> workplace accidents</li>
+     <li> medical malpractice </li>
+     <li> wrongful death claims </li>
+
      <li className="li4"> Emergencies</li>
     </ul>
    </div>
@@ -29,7 +34,7 @@ export default function PrimarySearchAppBar() {
 }
 
 const Wrapper = styled.div`
- background-color: #4d4dff;
+ background-color: var(--clr-black);
  display: flex;
  padding: 0.5rem;
  justify-content: center;
@@ -46,6 +51,7 @@ const Wrapper = styled.div`
    display: flex;
    justify-content: 'center';
    li {
+       color: white;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     background: transparent;
@@ -61,7 +67,7 @@ const Wrapper = styled.div`
     outline-color: var(--clr-primary-10);
    }
    li:hover {
-    color: black;
+    color: white;
     box-shadow: 0 2px var(--clr-primary-10);
    }
    .li4 {

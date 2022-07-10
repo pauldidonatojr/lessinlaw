@@ -95,7 +95,7 @@ const SidebarContainer = styled.div`
  }
 
  .sidebar {
-  background: rgb(6, 106, 225);
+  background: rgb(20, 39, 79);
   position: fixed;
   top: 0;
   left: 0;

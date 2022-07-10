@@ -80,6 +80,7 @@ const NavContainer = styled.nav`
 
   position: relative;
  }
+
  .faIcon:hover {
   opacity: 0.3;
  }
@@ -116,7 +117,9 @@ const NavContainer = styled.nav`
    font-size: 2rem;
   }
  }
-
+ .camera-toggle:hover {
+  color: blue;
+ }
  .nav-links {
   display: none;
  }
@@ -186,12 +189,12 @@ const NavContainer = styled.nav`
  }
 
  @media (min-width: 1050px) {
-  height: 16rem;
+  height: 18rem;
 
   .logo-div {
    grid-row: 2/3;
    grid-column: 1/3;
-   width: 575px;
+   width: 525px;
    height: 165px;
    margin-left: 15rem;
   }
@@ -256,7 +259,7 @@ const NavContainer = styled.nav`
    display: flex;
    justify-content: center;
    grid-column: 1/3;
-   grid-row: 1/2;
+   grid-row: 3/4;
 
    li {
     margin: 0 0.5rem;
@@ -268,7 +271,7 @@ const NavContainer = styled.nav`
     letter-spacing: var(--spacing);
     padding: 0.5rem;
     &:hover {
-     border-bottom: 2px solid var(--clr-primary-7);
+     border-bottom: 2px solid var(--clr-black);
     }
    }
   }

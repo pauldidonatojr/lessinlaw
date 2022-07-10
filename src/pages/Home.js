@@ -1,13 +1,15 @@
 import React from 'react'
-import { Hero, Featured, Filler, Services, Article } from '../components'
+import { Hero, Profiles,Footer } from '../components'
 const HomePage = () => {
  return (
   <main>
    <Hero />
+   <Profiles />
    {/* <Featured /> */}
    {/* <Services />
    <Filler />
    <Article /> */}
+<Footer />
   </main>
  )
 }

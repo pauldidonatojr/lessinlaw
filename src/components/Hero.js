@@ -12,8 +12,6 @@ const Hero = () => {
   <Wrapper>
    <div className="section-center">
     <div className="content">
-
-
      {/* <p
       style={{
        gridColumn: '1/3',
@@ -212,6 +210,7 @@ const Wrapper = styled.section`
   }
  }
  @media only screen and (max-width: 600px) {
+  height: 35rem;
   .section-center {
    border-radius: 2%;
    height: 45vh;
@@ -234,6 +233,7 @@ const Wrapper = styled.section`
   }
  }
  @media only screen and (min-width: 600px) {
+  height: 35rem;
   .section-center {
    border-radius: 4%;
    height: 55vh;
@@ -315,7 +315,7 @@ const Wrapper = styled.section`
    height: 55vh;
    width: 105vh;
    margin-top: 2rem;
- margin-bottom: 4rem;
+   margin-bottom: 4rem;
    display: grid;
    align-items: flex-start;
 
@@ -338,7 +338,6 @@ const Wrapper = styled.section`
    height: 20vh;
    margin-left: 18rem;
    grid-gap: 0.5rem;
-
   }
  }
 `
