@@ -145,6 +145,7 @@ const NavContainer = styled.nav`
  }
 
  @media (min-width: 576px) {
+       
  }
 
  @media only screen and (max-width: 600px) {
