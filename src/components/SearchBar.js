@@ -56,7 +56,7 @@ const Wrapper = styled.div`
     background: transparent;
     border-color: transparent;
     text-transform: capitalize;
-    font-size: 0.55rem;
+    font-size: 0.5rem;
     letter-spacing: var(--spacing);
     margin: 0 0.5rem;
     transition: var(--transition);

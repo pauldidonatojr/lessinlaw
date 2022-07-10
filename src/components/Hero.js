@@ -210,7 +210,7 @@ const Wrapper = styled.section`
   }
  }
  @media only screen and (max-width: 600px) {
-  height: 35rem;
+  height: 30rem;
   .section-center {
    border-radius: 2%;
    height: 45vh;
@@ -233,7 +233,7 @@ const Wrapper = styled.section`
   }
  }
  @media only screen and (min-width: 600px) {
-  height: 35rem;
+  height: 30rem;
   .section-center {
    border-radius: 4%;
    height: 55vh;
