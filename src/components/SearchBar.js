@@ -123,7 +123,7 @@ const Wrapper = styled.div`
  }
 
  @media screen and (max-width: 992px) {
-  display: grid;
+  /* display: grid;
   .div-3 {
    display: none;
   }
@@ -193,6 +193,6 @@ const Wrapper = styled.div`
   }
   .form-input::placeholder {
    color: var(--clr-grey-5);
-  }
+  } */
  }
 `
