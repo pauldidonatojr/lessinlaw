@@ -150,7 +150,8 @@ const Wrapper = styled.section`
   text-align: center;
   border-radius: var(--radius);
   display: grid;
-
+  height: 555px;
+  width: 300px;
   p {
    color: black;
   }
