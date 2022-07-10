@@ -19,7 +19,7 @@ export default function Navbar() {
      </button>
     </div>
 
-    <ul className="social-icons">
+    <div className="logo-div">
      {/* {social.map((socialIcon) => {
       const { id, url, icon } = socialIcon
       return (
@@ -31,7 +31,6 @@ export default function Navbar() {
      <img
       src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657399779/Jeffrey_R._Lessin_Associates_P.C._1_tyxapa.png
 "
-      style={{ width: '20rem' }}
       className="logo"
       alt="elpawl"
      />
@@ -46,7 +45,7 @@ export default function Navbar() {
      >
       Jeffrey R. Lessin & Associates, P.C.
      </h4> */}
-    </ul>
+    </div>
     <button type="button" className="camera-toggle">
      <FaPhoneAlt />
     </button>
@@ -73,6 +72,14 @@ const NavContainer = styled.nav`
  justify-content: space-between;
  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px 5px;
 
+ .logo {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+
+  position: relative;
+ }
  .faIcon:hover {
   opacity: 0.3;
  }
@@ -89,10 +96,6 @@ const NavContainer = styled.nav`
  .nav-header {
   display: flex;
   align-items: center;
-  img {
-   width: 100px;
-   margin-left: -15px;
-  }
  }
  .nav-toggle {
   background: transparent;
@@ -107,6 +110,7 @@ const NavContainer = styled.nav`
   background: transparent;
   border: transparent;
   color: var(--cltr-primary-5);
+
   cursor: pointer;
   svg {
    font-size: 2rem;
@@ -138,64 +142,59 @@ const NavContainer = styled.nav`
  }
 
  @media (min-width: 576px) {
-  .social-icons {
-   padding: 0.5rem;
-   display: grid;
-   justify-content: center;
-   align-items: center;
-  }
  }
 
  @media only screen and (max-width: 600px) {
-  .social-icons {
-   padding: 0.15rem;
-   display: grid;
-   justify-content: center;
-   align-items: center;
+  .logo-div {
+   width: 325px;
+   height: 150px;
+   border-radius: 20%;
+  }
 
-   h4 {
-    font-size: 0.6rem;
-    margin-top: 0.5rem;
-   }
+  h4 {
+   font-size: 0.6rem;
+   margin-top: 0.5rem;
   }
  }
 
  @media only screen and (min-width: 600px) {
-  .social-icons {
-   padding: 0.25rem;
-   display: grid;
-   justify-content: center;
-   align-items: center;
-   h4 {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-   }
+  .logo-div {
+   width: 345px;
+   height: 165px;
+   border-radius: 20%;
+  }
+  h4 {
+   font-size: 0.8rem;
+   margin-top: 0.5rem;
   }
  }
 
  @media only screen and (min-width: 768px) {
+  .logo-div {
+   width: 385px;
+   height: 175px;
+  }
   .nav-links {
    grid-column: 1/3;
    grid-row: 2/3;
   }
-  .social-icons {
-   padding: 0.15rem;
-   margin-left: 5rem;
-   margin-right: 5rem;
-   display: grid;
-   justify-content: center;
-   align-items: center;
-   grid-column: 1/3;
-   grid-row: 1/2;
-   h4 {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-   }
+
+  h4 {
+   font-size: 1.2rem;
+   margin-top: 0.5rem;
   }
  }
 
  @media (min-width: 1050px) {
-  height: 10rem;
+  height: 16rem;
+
+  .logo-div {
+   grid-row: 2/3;
+   grid-column: 1/3;
+   width: 575px;
+   height: 165px;
+   margin-left: 15rem;
+  }
   .nav-toggle {
    display: none;
   }
@@ -222,25 +221,25 @@ const NavContainer = styled.nav`
   .search-input {
    width: 30rem;
   }
-  .nav-links {
+  /* .nav-links {
    grid-column: 1/2;
    grid-row: 1/2;
-  }
+  } */
 
-  .social-icons {
+  /* .social-icons {
    padding: 0.15rem;
-
    display: grid;
    justify-content: center;
    align-items: center;
-
    grid-column: 1/2;
    grid-row: 1/2;
+   background-color: red;
+
    h4 {
     font-size: 1.2rem;
     margin-top: 0.5rem;
    }
-  }
+  } */
   /* .social-icons {
    display: flex;
    li {
@@ -256,6 +255,9 @@ const NavContainer = styled.nav`
   .nav-links {
    display: flex;
    justify-content: center;
+   grid-column: 1/3;
+   grid-row: 1/2;
+
    li {
     margin: 0 0.5rem;
    }
@@ -273,24 +275,22 @@ const NavContainer = styled.nav`
  }
 
  @media (min-width: 1280px) {
+  height: 16rem;
+  .logo-div {
+   grid-row: 2/3;
+   grid-column: 1/3;
+   width: 545px;
+   height: 145px;
+   margin-left: 15rem;
+  }
   .nav-links {
    grid-column: 1/3;
-   grid-row: 2/3;
+   grid-row: 3/4;
   }
-  .social-icons {
-   padding: 0.15rem;
-   margin-left: 20rem;
-   margin-right: 20rem;
-   display: grid;
-   justify-content: center;
-   align-items: center;
 
-   grid-column: 2/3;
-   grid-row: 1/2;
-   h4 {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-   }
+  h4 {
+   font-size: 1.2rem;
+   margin-top: 0.5rem;
   }
  }
 `

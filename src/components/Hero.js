@@ -309,12 +309,13 @@ const Wrapper = styled.section`
   }
  }
  @media (min-width: 1280px) {
-  min-height: 35rem;
+  min-height: 30rem;
   .section-center {
    background-color: green;
-   height: 60vh;
+   height: 55vh;
    width: 105vh;
-
+   margin-top: 2rem;
+ margin-bottom: 4rem;
    display: grid;
    align-items: flex-start;
 

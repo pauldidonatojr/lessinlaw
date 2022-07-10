@@ -8,39 +8,35 @@ import {
 } from 'react-icons/fa'
 import { GiCompass, GiDiamondHard, GiStabbedNote } from 'react-icons/gi'
 export const links = [
+
  {
   id: 0,
-  text: 'Home',
-  url: '/home',
- },
- {
-  id: 1,
   text: 'Firm Overview',
   url: '/about',
  },
 
  {
-  id: 2,
+  id: 1,
   text: 'Practice Areas Overview',
   url: '/videos',
  },
  {
-  id: 3,
+  id: 2,
   text: 'Attorney Profiles',
   url: '/contact',
  },
  {
-  id: 4,
+  id: 3,
   text: 'Resource Links',
   url: '/Addfood',
  },
  {
-  id: 5,
+  id: 4,
   text: 'Communities',
   url: '/Addfood',
  },
  {
-  id: 6,
+  id: 5,
   text: 'Contact Us',
   url: '/Addfood',
  },
