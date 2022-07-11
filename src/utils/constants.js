@@ -112,7 +112,8 @@ export const profiles = [
  },
  {
   id: 3,
-  logo:'https://res.cloudinary.com/elpawl-llc/image/upload/v1657481537/lawyer1_lqnbws.webp',
+  logo:
+   'https://res.cloudinary.com/elpawl-llc/image/upload/v1657481537/lawyer1_lqnbws.webp',
   icon: <GiStabbedNote />,
   title: 'James Murphy',
   text: `House Utilities controlled Remotely.
@@ -134,20 +135,18 @@ export const Reviews = [
   id: 1,
   image:
    'https://res.cloudinary.com/elpawl-llc/image/upload/v1654197550/image_2_tiyzm1.webp',
-  text: `You have options when it comes to renting your home, but most people know
-       about it.`,
+  text: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi`,
  },
  {
   id: 2,
   image:
    'https://res.cloudinary.com/elpawl-llc/image/upload/v1654197550/image_1_rfakam.jpg',
-  text: ` Renting your house doesn't have to be a succession of hope and
-       disappointment with each tennant you approve.`,
+  text: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi`,
  },
  {
   id: 3,
   image:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1654197550/image_4_ajsjwl.jpg',
+   'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
   text: `When you work with us, you
        get a hassle and worry free experience that makes your life so much
        easier. That is our guarantee!!!`,
