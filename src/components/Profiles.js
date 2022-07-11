@@ -54,7 +54,7 @@ const Profiles = () => {
 }
 
 const Wrapper = styled.section`
- height: 325vh;
+ height: 345vh;
  padding: 1.5rem;
 
  .logo {
