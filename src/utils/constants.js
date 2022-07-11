@@ -86,23 +86,24 @@ export const social = [
   icon: <FaYoutube />,
  },
 ]
+
 export const profiles = [
  {
   id: 1,
   logo:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1650558637/house_qxpp71.jpg',
+   'https://res.cloudinary.com/elpawl-llc/image/upload/v1657481537/lawyer3_d9h9li.jpg',
   icon: <GiCompass />,
-  title: 'what we do?',
+  title: 'Jeffrey Lessin',
   text:
    'We lease your home and rent it out as short term rentals on sites such as AirBnb.',
  },
  {
   id: 2,
   logo:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1650558637/generic_1_o2z5hb.jpg',
+   'https://res.cloudinary.com/elpawl-llc/image/upload/v1657481537/lawyer2_hpffed.jpg',
 
   icon: <GiDiamondHard />,
-  title: 'benefits to you.',
+  title: 'Mark T. Richter',
   text: `
    Free Property Management.
    Save Money on Insurance.
@@ -111,24 +112,22 @@ export const profiles = [
  },
  {
   id: 3,
-  logo:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1652561273/Vacation-Rental-Websites-The-Comprehensive-Guide_h8w2ho.jpg',
+  logo:'https://res.cloudinary.com/elpawl-llc/image/upload/v1657481537/lawyer1_lqnbws.webp',
   icon: <GiStabbedNote />,
-  title: "We Can Do What Other Won't",
+  title: 'James Murphy',
   text: `House Utilities controlled Remotely.
 Outside Cameras for Added Security.
 Cleaning Crew after Each Rental.
 Minor Repairs done at Our Expense.
 `,
  },
- {
-  id: 4,
-  logo:
-   'https://res.cloudinary.com/elpawl-llc/image/upload/v1650558637/generic_3_saiwdi.jpg',
-  icon: <GiStabbedNote />,
-  title: 'our commitment.',
-  text: `Never have to worry about your lease being paid on time. We love what we do and our Landlords get a house that will be maintained better than they could ever hope for.`,
- },
+ //  {
+ //   id: 4,
+ //   logo:
+ //   icon: <GiStabbedNote />,
+ //   title: 'our commitment.',
+ //   text: `Never have to worry about your lease being paid on time. We love what we do and our Landlords get a house that will be maintained better than they could ever hope for.`,
+ //  },
 ]
 export const Reviews = [
  {

@@ -56,8 +56,8 @@ const Wrapper = styled.div`
     background: transparent;
     border-color: transparent;
     text-transform: capitalize;
-    font-size: 0.5rem;
     letter-spacing: var(--spacing);
+    font-size: 0.60rem;
     margin: 0 0.5rem;
     transition: var(--transition);
     cursor: pointer;
@@ -111,18 +111,64 @@ const Wrapper = styled.div`
    color: var(--clr-grey-5);
   }
  @media (min-width: 576px) {
+     .div-1 {
+         ul {
+             li{
+ font-size: 0.5rem;
+             }
+         }
+     }
  }
 
  @media only screen and (max-width: 600px) {
+      .div-1 {
+         ul {
+             li{
+ font-size: 0.65rem;
+             }
+         }
+     }
  }
 
  @media only screen and (min-width: 600px) {
+      .div-1 {
+         ul {
+             li{
+ font-size: 0.65rem;
+             }
+         }
+     }
  }
 
  @media only screen and (min-width: 768px) {
+      .div-1 {
+         ul {
+             li{
+ font-size: 0.5rem;
+             }
+         }
+     }
  }
 
  @media screen and (max-width: 992px) {
+      .div-1 {
+         ul {
+             li{
+ font-size: 0.5rem;
+             }
+         }
+     }
 
  }
+
+ @media (min-width: 1280px) {
+.div-1 {
+         ul {
+             li{
+ font-size: 0.5rem;
+             }
+         }
+     }
+}
+
 `

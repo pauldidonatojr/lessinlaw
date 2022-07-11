@@ -9,7 +9,7 @@ const Profiles = () => {
     <div className="div1section">
      {' '}
      <img
-      src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657479579/Attorney_Profiles_1_e9fe6q.png
+      src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657495467/Meet_the_Lawyers_dgcqnp.png
 
 "
       className="logo1"
@@ -54,14 +54,13 @@ const Profiles = () => {
 }
 
 const Wrapper = styled.section`
- height: 355vh;
+ height: 325vh;
  padding: 1.5rem;
 
  .logo {
   width: 100%;
   display: block;
   object-fit: cover;
-  height: 195px;
  }
 
  h4 {
@@ -77,11 +76,9 @@ const Wrapper = styled.section`
   display: grid;
   justify-content: center;
   align-items: center;
-
+  width: 100%;
   text-transform: capitalize;
   font-size: 2.35rem;
-  height: 8.5rem;
-
   font-family: roboto;
  }
 
@@ -111,9 +108,10 @@ const Wrapper = styled.section`
  } */
  .services-center {
   display: grid;
-  padding: 0.5rem;
   grid-gap: 2rem;
- }
+
+
+  }
 
  .div1section {
   height: 20rem;
@@ -126,14 +124,14 @@ const Wrapper = styled.section`
    width: 100%;
    display: block;
    object-fit: cover;
-   height: 295px;
+
   }
  }
  .div2section {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-gap: 2rem;
+  grid-gap: 6rem;
  }
  .section-center-1 .text {
   padding: 1rem;
@@ -171,9 +169,9 @@ const Wrapper = styled.section`
   }
  }
  @media (min-width: 576px) {
-  .services-center {
+  /* .services-center {
    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  }
+  } */
   .service,
   .section-center-1,
   .section-center-2,
@@ -193,8 +191,14 @@ const Wrapper = styled.section`
   .section-center-2,
   .section-center-3,
   .section-center-4 {
-   height: 555px;
-   width: 300px;
+   height: 575px;
+   width: 355px;
+  }
+  .logo {
+   height: 255px;
+  }
+  .logo1 {
+   height: 355px;
   }
  }
  @media only screen and (min-width: 600px) {
@@ -207,8 +211,14 @@ const Wrapper = styled.section`
   .section-center-2,
   .section-center-3,
   .section-center-4 {
-   height: 555px;
-   width: 300px;
+   height: 585px;
+   width: 425px;
+  }
+  .logo {
+   height: 275px;
+  }
+  .logo1 {
+   height: 355px;
   }
  }
  @media only screen and (min-width: 768px) {
@@ -221,8 +231,11 @@ const Wrapper = styled.section`
   .section-center-2,
   .section-center-3,
   .section-center-4 {
-   height: 555px;
-   width: 300px;
+   height: 625px;
+   width: 425px;
+  }
+  .logo {
+   height: 355px;
   }
  }
  @media (min-width: 992px) {
@@ -230,17 +243,20 @@ const Wrapper = styled.section`
    width: 100%;
    height: 255px;
   }
-  .header {
+  /* .header {
    display: grid;
    grid-template-columns: 1fr 1fr;
-  }
+  } */
   .service,
   .section-center-1,
   .section-center-2,
   .section-center-3,
   .section-center-4 {
-   height: 555px;
-   width: 300px;
+   height: 625px;
+   width: 475px;
+  }
+  .logo {
+   height: 355px;
   }
  }
 
@@ -254,10 +270,14 @@ const Wrapper = styled.section`
   .section-center-2,
   .section-center-3,
   .section-center-4 {
-   height: 555px;
-   width: 300px;
+   height: 625px;
+   width: 525px;
   }
-  .section-center-1 {
+  .logo {
+   height: 355px;
+  }
+
+  /* .section-center-1 {
    grid-column: 1/2;
    grid-row: 1/2;
   }
@@ -277,9 +297,7 @@ const Wrapper = styled.section`
    transform: translateY(5rem);
    padding: 0.5rem;
    margin-bottom: 2rem;
-  }
-  .service {
-  }
+  } */
  }
 `
 export default Profiles
