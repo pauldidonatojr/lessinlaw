@@ -60,14 +60,13 @@ const Hero = () => {
 }
 
 const Wrapper = styled.section`
- min-height: 30rem;
  display: grid;
  align-items: center;
- background-color: lightgrey;
+
  /* background: url('https://res.cloudinary.com/elpawl-llc/image/upload/v1650559874/generic_4_nzua4y.jpg')
   no-repeat center center;
  background-size: cover; */
- height: 100%;
+ height: 130vh;
 
  .close-modal-btn {
   position: absolute;

@@ -2,9 +2,9 @@ import React from 'react'
 import { Hero, Profiles,Footer } from '../components'
 const HomePage = () => {
  return (
-  <main>
+  <main style={{marginBottom: '30rem'}}>
    <Hero />
-   <Profiles />
+
    {/* <Featured /> */}
    {/* <Services />
    <Filler />
