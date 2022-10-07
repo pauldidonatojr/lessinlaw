@@ -13,8 +13,8 @@ const Footer = () => {
    <div className="div2">
     {' '}
     <p>
-     Location: 1515 Market Street, Suite 714 | Philadelphia, PA 19102 | Phone:
-     (215) 599-1400 | Fax: 215-220-3988
+     Location: 1515 Market Street, Suite 1650 | Philadelphia, PA 19102 | Phone:
+     (215) 599-1400 | Fax: 215-599-0120
     </p>
     <h5>
      &copy; {new Date().getFullYear()}
