@@ -229,3 +229,18 @@ p {
 .page {
   min-height: calc(100vh - (20vh + 10rem));
 }
+ .close-modal-btn {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   font-size: 2rem;
+   background: transparent;
+   border-color: transparent;
+   color: var(--clr-red-dark);
+   cursor: pointer;
+ }
+
+ .show-modal {
+   visibility: visible;
+   z-index: 10;
+ }

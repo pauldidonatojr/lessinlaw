@@ -145,7 +145,7 @@ const NavContainer = styled.nav`
  }
 
  @media (min-width: 576px) {
-       
+
  }
 
  @media only screen and (max-width: 600px) {
@@ -282,7 +282,7 @@ const NavContainer = styled.nav`
   height: 16rem;
   .logo-div {
    grid-row: 2/3;
-   grid-column: 1/3;
+   grid-column: 2/3;
    width: 545px;
    height: 145px;
    margin-left: 15rem;

@@ -21,7 +21,7 @@ const Hero = () => {
       Rent your house to us worry free! <br />
      </p> */}
 
-     <span style={{ gridColumn: '1/3', gridRow: '4/5' }}>
+     <span style={{ gridColumn: '1/3', gridRow: '5/6' }}>
       <button type="button" className="submit-btn" onClick={openModal}>
        Contact us today
       </button>
@@ -68,25 +68,6 @@ const Wrapper = styled.section`
  background-size: cover; */
  height: 130vh;
 
- .close-modal-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  background: transparent;
-  border-color: transparent;
-  color: var(--clr-red-dark);
-  cursor: pointer;
- }
- .show-modal {
-  visibility: visible;
-  z-index: 10;
- }
- .qr-container {
-  height: 70vh;
-  width: 50vh;
-  background: var(--mainGrey);
- }
  .modal-container {
   background-color: var(--clr-grey-3);
   border-radius: var(--radius);
@@ -209,12 +190,13 @@ const Wrapper = styled.section`
   }
  }
  @media only screen and (max-width: 600px) {
-  height: 30rem;
+  height: 25rem;
   .section-center {
+   margin-top: 2.5rem;
    border-radius: 2%;
-   height: 45vh;
-   width: 40vh;
-   padding: 0.25rem;
+   height: 55vh;
+   width: 45vh;
+   padding: 2.5rem;
    background: url('https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg')
     no-repeat center center;
    background-size: cover;
@@ -237,7 +219,7 @@ const Wrapper = styled.section`
    border-radius: 4%;
    height: 55vh;
    padding: 3rem;
-   width: 55vh;
+   width: 40vh;
    background: url('https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg')
     no-repeat center center;
    background-size: cover;
@@ -260,7 +242,7 @@ const Wrapper = styled.section`
  @media only screen and (min-width: 768px) {
   min-height: 35rem;
   .section-center {
-   height: 60vh;
+   height: 55vh;
    width: 70vh;
    grid-gap: 1.5rem;
    border-radius: 2%;
@@ -286,7 +268,8 @@ const Wrapper = styled.section`
    margin-bottom: 0;
   }
   .section-center {
-   height: 60vh;
+   margin-top: 5rem;
+   height: 65vh;
    width: 75vh;
 
    border-radius: 2%;
@@ -311,8 +294,8 @@ const Wrapper = styled.section`
   min-height: 30rem;
   .section-center {
    background-color: green;
-   height: 55vh;
-   width: 105vh;
+   height: 60vh;
+   width: 95vh;
    margin-top: 2rem;
    margin-bottom: 4rem;
    display: grid;
