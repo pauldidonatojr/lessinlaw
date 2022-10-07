@@ -47,7 +47,9 @@ export default function Navbar() {
      </h4> */}
     </div>
     <button type="button" className="camera-toggle">
-     <FaPhoneAlt />
+     <a href="tel:+2155991400">
+      <FaPhoneAlt />
+     </a>
     </button>
 
     <ul className="nav-links">
@@ -145,7 +147,6 @@ const NavContainer = styled.nav`
  }
 
  @media (min-width: 576px) {
-
  }
 
  @media only screen and (max-width: 600px) {
