@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useForm, ValidationError } from '@formspree/react'
 
 const Contact = () => {
- const [state, handleSubmit] = useForm('mgedrrvw')
+ const [state, handleSubmit] = useForm('xzbwkndk')
  if (state.succeeded) {
   return <p style={{ fontSize: '2rem' }}>We will be in contact shortly!</p>
  }
