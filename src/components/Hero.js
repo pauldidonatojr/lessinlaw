@@ -10,49 +10,24 @@ const Hero = () => {
  const { isModalOpen, closeModal } = useModalContext()
  return (
   <Wrapper>
-   <div className="section-center">
-    <div className="content">
-     {/* <p
-      style={{
-       gridColumn: '1/3',
-       gridRow: '2/3',
-      }}
-     >
-      Rent your house to us worry free! <br />
-     </p> */}
+   <div className='content'>
+    <img
+     className="img-content"
+     src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg"
+    />
 
-     <span style={{ gridColumn: '1/3', gridRow: '5/6' }}>
-      <button type="button" className="submit-btn" onClick={openModal}>
-       Contact us today
-      </button>
-     </span>
-     <div
-      className={`${
-       isModalOpen ? 'modal-overlay show-modal' : 'modal-overlay'
-      }`}
-     >
-      <div className="modal-container">
-       <button className="close-modal-btn" onClick={closeModal}>
-        <FaWindowClose></FaWindowClose>
-       </button>
-       <Contact />
-      </div>
-     </div>
-
-     {/*
-     <form
-      className="contact-form"
-      action="https://formspree.io/f/xeqvywoa"
-      method="POST"
-     >
-      <input
-       type="email"
-       className="form-input"
-       placeholder="enter your email"
-       name="_replyto"
-      />
-
-     </form> */}
+    <button type="button" className="submit-btn" onClick={openModal}>
+     Contact us today
+    </button>
+   </div>
+   <div
+    className={`${isModalOpen ? 'modal-overlay show-modal' : 'modal-overlay'}`}
+   >
+    <div className="modal-container">
+     <button className="close-modal-btn" onClick={closeModal}>
+      <FaWindowClose></FaWindowClose>
+     </button>
+     <Contact />
     </div>
    </div>
   </Wrapper>
@@ -62,17 +37,16 @@ const Hero = () => {
 const Wrapper = styled.section`
  display: grid;
  align-items: center;
-
+ background-color: rgb(20, 39, 79);
  /* background: url('https://res.cloudinary.com/elpawl-llc/image/upload/v1650559874/generic_4_nzua4y.jpg')
   no-repeat center center;
  background-size: cover; */
  height: 130vh;
-
+ width: 100%;
  .modal-container {
   background-color: var(--clr-grey-3);
   border-radius: var(--radius);
   margin: auto;
-  width: 100%;
   height: 75vh;
   max-width: var(--fixed-width);
   text-align: center;
@@ -190,19 +164,13 @@ const Wrapper = styled.section`
   }
  }
  @media only screen and (max-width: 600px) {
-  height: 25rem;
-  .section-center {
-   margin-top: 2.5rem;
-   border-radius: 2%;
-   height: 55vh;
-   width: 45vh;
-   padding: 2.5rem;
-   background: url('https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg')
-    no-repeat center center;
-   background-size: cover;
-  }
+  height: 80vh;
+  display: grid;
+  justify-content: grid;
+  align-items: center;
+
   .header {
-   font-size: 2rem;
+   font-size: 1rem;
    margin-bottom: 5rem;
   }
   .submit-btn {
@@ -210,7 +178,16 @@ const Wrapper = styled.section`
    padding: 0.5rem 0.5rem;
   }
   .content {
-   height: 55vh;
+   width: 100%;
+   height: 70vh;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+  }
+  .img-content {
+   width: 35vh;
+   height: 40vh;
+   padding: 1rem;
   }
  }
  @media only screen and (min-width: 600px) {
@@ -218,7 +195,7 @@ const Wrapper = styled.section`
   .section-center {
    border-radius: 4%;
    height: 55vh;
-   padding: 3rem;
+   padding: 1rem;
    width: 40vh;
    background: url('https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg')
     no-repeat center center;
