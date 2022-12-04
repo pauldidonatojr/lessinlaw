@@ -33,10 +33,11 @@ const Footer = () => {
 }
 
 const Wrapper = styled.footer`
- min-height: 10rem;
+ min-height: 20rem;
  width: 100%;
- position: absolute;
- font-family: roboto;
+ /* position: absolute;
+ font-family: roboto; */
+ margin-top:150rem;
  bottom: 0;
  display: grid;
  justify-content: center;

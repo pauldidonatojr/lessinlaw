@@ -10,7 +10,7 @@ const Hero = () => {
  const { isModalOpen, closeModal } = useModalContext()
  return (
   <Wrapper>
-   <div className='content'>
+   <div className="content">
     <img
      className="img-content"
      src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg"
@@ -96,12 +96,12 @@ const Wrapper = styled.section`
  .form-input {
   color: var(--clr-black);
  }
- .submit-btn {
+ /* .submit-btn {
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
- }
+ } */
  .form-input::placeholder {
   color: var(--clr-black);
   text-transform: capitalize;
@@ -191,112 +191,113 @@ const Wrapper = styled.section`
   }
  }
  @media only screen and (min-width: 600px) {
-  height: 30rem;
-  .section-center {
-   border-radius: 4%;
-   height: 55vh;
-   padding: 1rem;
-   width: 40vh;
-   background: url('https://res.cloudinary.com/elpawl-llc/image/upload/v1657311447/lessin_law-logos_yddbqn.jpg')
-    no-repeat center center;
-   background-size: cover;
-  }
+  height: 80vh;
+  display: grid;
+  justify-content: grid;
+  align-items: center;
 
-  .submit-btn {
-   font-size: 1.25rem;
-   padding: 0.75rem 1rem;
-  }
   .header {
-   font-size: 2.35rem;
-   margin-bottom: 8rem;
+   font-size: 1rem;
+   margin-bottom: 5rem;
   }
-
+  .submit-btn {
+   font-size: 1.2rem;
+   padding: 0.5rem 0.5rem;
+  }
   .content {
-   height: 60vh;
+   width: 100%;
+   height: 70vh;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+  }
+  .img-content {
+   width: 35vh;
+   height: 40vh;
+   padding: 1rem;
   }
  }
 
  @media only screen and (min-width: 768px) {
-  min-height: 35rem;
-  .section-center {
-   height: 55vh;
-   width: 70vh;
-   grid-gap: 1.5rem;
-   border-radius: 2%;
-   padding: 2.5rem;
-   background-color: red;
-  }
+  height: 80vh;
+  display: grid;
+  justify-content: grid;
+  align-items: center;
 
   .header {
-   font-size: 2.65rem;
-  }
-  .content {
-   height: 68vh;
+   font-size: 1rem;
+   margin-bottom: 5rem;
   }
   .submit-btn {
-   font-size: 1.25rem;
-   padding: 0.75rem 1.75rem;
+   font-size: 1.2rem;
+   padding: 0.5rem 0.5rem;
+  }
+  .content {
+   width: 100%;
+   height: 70vh;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+  }
+  .img-content {
+   width: 35vh;
+   height: 40vh;
+   padding: 1rem;
   }
  }
 
  @media (min-width: 992px) {
-  min-height: 35rem;
-  p {
-   margin-bottom: 0;
-  }
-  .section-center {
-   margin-top: 5rem;
-   height: 65vh;
-   width: 75vh;
+  height: 80vh;
+  display: grid;
+  justify-content: grid;
+  align-items: center;
 
-   border-radius: 2%;
-   background-color: pink;
-   padding: 3.5rem;
-  }
-  .content {
-   height: 65vh;
+  .header {
+   font-size: 1rem;
+   margin-bottom: 5rem;
   }
   .submit-btn {
-   font-size: 1.25rem;
-   padding: 0.5rem 1.25rem;
+   font-size: 1.2rem;
+   padding: 0.5rem 0.5rem;
   }
-  .modal-container {
+  .content {
+   width: 100%;
    height: 70vh;
+   display: grid;
+   align-items: center;
+   justify-content: center;
   }
-  .header {
-   font-size: 3rem;
+  .img-content {
+   width: 35vh;
+   height: 40vh;
+   padding: 1rem;
   }
  }
  @media (min-width: 1280px) {
-  min-height: 30rem;
-  .section-center {
-   background-color: green;
-   height: 60vh;
-   width: 95vh;
-   margin-top: 2rem;
-   margin-bottom: 4rem;
-   display: grid;
-   align-items: flex-start;
+  height: 80vh;
+  display: grid;
+  justify-content: grid;
+  align-items: center;
 
-   border-radius: 2%;
-  }
-  .modal-container {
-   height: 70vh;
+  .header {
+   font-size: 1rem;
+   margin-bottom: 5rem;
   }
   .submit-btn {
-   font-size: 1.25rem;
-   padding: 1rem 1.25rem;
-  }
-  .header {
-   font-size: 3em;
+   font-size: 1.2rem;
+   padding: 0.5rem 0.5rem;
   }
   .content {
-   grid-column: 5/6;
-   grid-row: 1/2;
-   width: 60vh;
-   height: 20vh;
-   margin-left: 18rem;
-   grid-gap: 0.5rem;
+   width: 100%;
+   height: 70vh;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+  }
+  .img-content {
+   width: 35vh;
+   height: 40vh;
+   padding: 1rem;
   }
  }
 `

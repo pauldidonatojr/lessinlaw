@@ -1,23 +1,22 @@
 import React from 'react'
-import { Hero, Profiles, Footer } from '../components'
+import { Hero, Profiles, Article, Filler, Section } from '../components'
 import styled from 'styled-components'
 const HomePage = () => {
-  return (
-   <Wrapper>
-    <main  >
-     <Hero />
+ return (
+  <Wrapper>
+   <main>
+    <Hero />
 
-     {/* <Featured /> */}
-     {/* <Services />
-   <Filler />
-   <Article /> */}
-     <Footer />
-    </main>
-   </Wrapper>
-  )
+   <Article/>
+       <Filler />
+       <Section />
+   </main>
+  </Wrapper>
+ )
 }
 const Wrapper = styled.div`
-   height: 95vh;
+ height: 95vh;
 
+ width: 100%;
 `
 export default HomePage

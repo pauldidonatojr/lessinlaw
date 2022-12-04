@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Home, ErrorPage } from './pages/Index'
-import { Navbar, Sidebar, SearchBar } from './components'
+import { Navbar, Sidebar, SearchBar, Footer } from './components'
 import React from 'react'
 function App() {
  return (
@@ -18,6 +18,7 @@ function App() {
      <ErrorPage />
     </Route>
    </Switch>
+   <Footer />
   </Router>
  )
 }
