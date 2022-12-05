@@ -14,8 +14,8 @@ export {
  Hero,
  Profiles,
  SearchBar,
- Footer,
  Article,
  Filler,
  Section,
+ Footer,
 }

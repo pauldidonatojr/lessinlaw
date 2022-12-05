@@ -35,18 +35,20 @@ const Footer = () => {
 const Wrapper = styled.footer`
  min-height: 20rem;
  width: 100%;
- /* position: absolute;
- font-family: roboto; */
- margin-top:150rem;
- bottom: 0;
+ 
+ position: static;
+ font-family: roboto;
  display: grid;
  justify-content: center;
  align-items: center;
  background: var(--clr-black);
  text-align: center;
+ margin-top: 195vh;
+ 
  span {
   color: var(--clr-grey-9);
  }
+ 
  h5 {
   color: var(--clr-white);
   margin: 0.1rem;
@@ -55,6 +57,8 @@ const Wrapper = styled.footer`
   text-transform: none;
   line-height: 1.25;
  }
+
+
  .logo {
   width: 100%;
   display: block;
@@ -78,14 +82,14 @@ const Wrapper = styled.footer`
   }
  }
  .div1 {
-  display: grid;
+  display: inline;
   grid-column: 2/3;
   grid-row: 1/2;
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
   font-size: 0.7rem;
-  font-family: roboto;
+  font-family: robot;
   color: white;
 
   img {
@@ -106,25 +110,6 @@ const Wrapper = styled.footer`
 
   color: white;
   font-family: roboto;
- }
- @media (min-width: 576px) {
- }
-
- @media only screen and (max-width: 600px) {
-  .div1 {
-  }
-  .div2 {
-  }
-  .div3 {
-  }
- }
-
- @media only screen and (min-width: 600px) {
- }
-
- @media only screen and (min-width: 768px) {
- }
- @media (min-width: 776px) {
  }
 `
 
