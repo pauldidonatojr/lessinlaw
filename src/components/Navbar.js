@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { links, social } from '../utils/constants'
 import { useSideContext } from '../context/sidebar_context'
 import { useModalContext } from '../context/modal_context'
+import CallIcon from '@mui/icons-material/Call';
 
 export default function Navbar() {
  const { openModal } = useModalContext()
@@ -46,11 +47,10 @@ export default function Navbar() {
       Jeffrey R. Lessin & Associates, P.C.
      </h4> */}
     </div>
-    <button type="button" className="camera-toggle">
-     <a href="tel:+2155991400">
-      <FaPhoneAlt />
+    
+     <a href="tel:+2155991400" className="call-toggle">
+      <CallIcon/>
      </a>
-    </button>
 
     <ul className="nav-links">
      {links.map((link) => {
@@ -109,17 +109,18 @@ const NavContainer = styled.nav`
    font-size: 2rem;
   }
  }
- .camera-toggle {
+ .call-toggle {
+  right: 20px;
+  position: absolute;
   background: transparent;
   border: transparent;
-  color: var(--cltr-primary-5);
-
+  color: black;
   cursor: pointer;
   svg {
    font-size: 2rem;
   }
  }
- .camera-toggle:hover {
+ .call-toggle:hover {
   color: blue;
  }
  .nav-links {

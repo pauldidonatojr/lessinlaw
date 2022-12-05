@@ -1,5 +1,5 @@
 import * as React from 'react'
-
+import CallIcon from '@mui/icons-material/Call';
 import { FaSearch } from 'react-icons/fa'
 import styled from 'styled-components'
 
@@ -110,65 +110,16 @@ const Wrapper = styled.div`
   .form-input::placeholder {
    color: var(--clr-grey-5);
   }
- @media (min-width: 576px) {
-     .div-1 {
-         ul {
-             li{
- font-size: 0.5rem;
-             }
-         }
-     }
- }
-
- @media only screen and (max-width: 600px) {
-      .div-1 {
-         ul {
-             li{
- font-size: 0.65rem;
-             }
-         }
-     }
- }
 
  @media only screen and (min-width: 600px) {
       .div-1 {
          ul {
              li{
- font-size: 0.65rem;
+                font-size: 1rem;
              }
          }
      }
  }
 
- @media only screen and (min-width: 768px) {
-      .div-1 {
-         ul {
-             li{
- font-size: 0.5rem;
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 992px) {
-      .div-1 {
-         ul {
-             li{
- font-size: 0.5rem;
-             }
-         }
-     }
-
- }
-
- @media (min-width: 1280px) {
-.div-1 {
-         ul {
-             li{
- font-size: 0.5rem;
-             }
-         }
-     }
-}
 
 `
