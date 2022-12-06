@@ -18,7 +18,6 @@ function App() {
      <ErrorPage />
     </Route>
    </Switch>
-   <Footer />
   </Router>
  )
 }

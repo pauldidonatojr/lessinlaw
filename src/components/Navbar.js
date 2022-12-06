@@ -6,10 +6,48 @@ import { links, social } from '../utils/constants'
 import { useSideContext } from '../context/sidebar_context'
 import { useModalContext } from '../context/modal_context'
 import CallIcon from '@mui/icons-material/Call';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import { Typography, makeStyles, useTheme, useMediaQuery } from '@material-ui/core';
+
+
+const useStyles = makeStyles(theme => ({
+      nav_links: {
+            width: '100%',
+            position: 'relative',
+            display: 'grid',
+            alignContent: 'center',
+            alignItems: 'center',
+            placeContent: 'center',
+            justifyContent: 'center',
+            padding: '0.2rem'
+        },
+      "@media (max-width: 600px)": {
+      nav_links: {
+            visibility: 'hidden'
+        }
+      }
+  }));
+  
+
 
 export default function Navbar() {
+ const classes = useStyles();
  const { openModal } = useModalContext()
  const { openSidebar } = useSideContext()
+
+ const [value, setValue] = React.useState(2);
+
+ const handleChange = (event, newValue) => {
+      setValue(newValue);
+ };
+
+ const handleClick = (event, message) => {
+      // 👇️ refers to the image element
+      
+    };
+  
+
 
  return (
   <NavContainer>
@@ -20,39 +58,38 @@ export default function Navbar() {
      </button>
     </div>
 
+
+    <div className='navbar-holder'>
+      
     <div className="logo-div">
-     {/* {social.map((socialIcon) => {
-      const { id, url, icon } = socialIcon
-      return (
-       <li key={id}>
-        <a href={url}>{icon}</a>
-       </li>
-      )
-     })} */}
-     <img
-      src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657399779/Jeffrey_R._Lessin_Associates_P.C._1_tyxapa.png
-"
-      className="logo"
-      alt="elpawl"
-     />
-     {/* <h4
-      style={{
-       textShadow: '2px 2px white',
-       color: 'var(--clr-black)',
-       fontWeight: 'bold',
-       fontFamily: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen`,
-      }}
-      className="header"
-     >
-      Jeffrey R. Lessin & Associates, P.C.
-     </h4> */}
+    
+      </div>
+
+      <Tabs className={classes.nav_links} value={value} onChange={handleChange} centered>
+            {links.map((link) => {
+            const { id, text, url } = link
+            return (
+                        <Tab label={text} to={url} component={Link} >{value}</Tab>
+            )
+            })}
+    </Tabs>
+
+    
     </div>
+
+      
+
+
+    
     
      <a href="tel:+2155991400" className="call-toggle">
       <CallIcon/>
      </a>
 
-    <ul className="nav-links">
+
+     
+
+    {/* <ul className="nav-links">
      {links.map((link) => {
       const { id, text, url } = link
       return (
@@ -61,7 +98,7 @@ export default function Navbar() {
        </li>
       )
      })}
-    </ul>
+    </ul> */}
    </div>
   </NavContainer>
  )
@@ -69,17 +106,26 @@ export default function Navbar() {
 
 const NavContainer = styled.nav`
  height: 10rem;
- display: flex;
  align-items: center;
  justify-content: space-between;
  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px 5px;
 
- .logo {
+ .navbar-holder{
+  position: relative;
   width: 100%;
-  display: block;
-  height: 100%;
-  object-fit: cover;
+ }
 
+ .logo-div {
+      display:block;
+      position: relative;
+      width: 90%;
+      height: 90%;
+  }
+
+ .logo {
+  width: 500px;
+  height: 250px;
+  display: inline-block;
   position: relative;
  }
 
@@ -147,60 +193,16 @@ const NavContainer = styled.nav`
   opacity: 0.3;
  }
 
- @media (min-width: 576px) {
- }
-
- @media only screen and (max-width: 600px) {
-  .logo-div {
-   width: 325px;
-   height: 150px;
-   border-radius: 20%;
-  }
-
-  h4 {
-   font-size: 0.6rem;
-   margin-top: 0.5rem;
-  }
- }
-
- @media only screen and (min-width: 600px) {
-  .logo-div {
-   width: 345px;
-   height: 165px;
-   border-radius: 20%;
-  }
-  h4 {
-   font-size: 0.8rem;
-   margin-top: 0.5rem;
-  }
- }
-
- @media only screen and (min-width: 768px) {
-  .logo-div {
-   width: 385px;
-   height: 175px;
-  }
-  .nav-links {
-   grid-column: 1/3;
-   grid-row: 2/3;
-  }
-
-  h4 {
-   font-size: 1.2rem;
-   margin-top: 0.5rem;
-  }
- }
+ 
 
  @media (min-width: 1050px) {
   height: 18rem;
 
-  .logo-div {
-   grid-row: 2/3;
-   grid-column: 1/3;
-   width: 525px;
-   height: 165px;
-   margin-left: 15rem;
-  }
+
+  .navbar-holder{
+     height: 165px;
+   }
+
   .nav-toggle {
    display: none;
   }
@@ -280,15 +282,19 @@ const NavContainer = styled.nav`
   }
  }
 
+ @media (max-width: 600px) {
+      navbar-holder:{
+            background-color: black;
+      }
+     }
+
  @media (min-width: 1280px) {
   height: 16rem;
-  .logo-div {
-   grid-row: 2/3;
-   grid-column: 2/3;
-   width: 545px;
-   height: 145px;
-   margin-left: 15rem;
+
+  .navbar-holder{
+      height: 200px;
   }
+
   .nav-links {
    grid-column: 1/3;
    grid-row: 3/4;

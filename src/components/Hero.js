@@ -3,6 +3,10 @@ import React, { useState, useEffect } from 'react'
 import { FaWindowClose } from 'react-icons/fa'
 import { useModalContext } from '../context/modal_context'
 import Contact from './Contact'
+import Article from './Article'
+import Filler from './Filler'
+import Section from './Section'
+import { Footer } from '.'
 
 const Hero = () => {
  const { openModal } = useModalContext()
@@ -29,7 +33,15 @@ const Hero = () => {
      </button>
      <Contact />
     </div>
+    
    </div>
+
+   <Article/>
+   <Filler/>
+   <Section/>
+   <Footer/>
+   
+
   </Wrapper>
  )
 }

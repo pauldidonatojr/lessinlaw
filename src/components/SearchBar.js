@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { FaSearch } from 'react-icons/fa'
 import styled from 'styled-components'
+import { Typography, makeStyles, useTheme, useMediaQuery } from '@material-ui/core';
 import ListSubheader from '@mui/material/ListSubheader';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -14,13 +15,31 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
 
+const useStyles = makeStyles(theme => ({
+    List_1: {
+        width: '500px', 
+        height: '100%',
+        bgcolor: 'background.black', 
+        position: 'relative'
+      },
+    
+    "@media (max-width: 600px)": {
+      List_1: {
+        width: '300px', 
+      }
+    }
+}));
+
 
 export default function PrimarySearchAppBar() {
+
+
+    const classes = useStyles();
     const [open, setOpen] = React.useState(false);
 
-  const handleClick = () => {
-    setOpen(!open);
-  };
+    const handleClick = () => {
+        setOpen(!open);
+    };
  return (
   <Wrapper className="searchbar-1">
    {/* <div className="div-1">
@@ -41,7 +60,7 @@ export default function PrimarySearchAppBar() {
 
 <div>
    <List
-      sx={{ width: '100%', bgcolor: 'background.black' }}
+      className={classes.List_1}
       component="nav"
     >
        
@@ -126,6 +145,11 @@ const Wrapper = styled.div`
  display: flex;
  padding: 0.5rem;
  justify-content: center;
+
+
+ .List-1{
+        
+ }
 
  display: grid;
   .div-3 {

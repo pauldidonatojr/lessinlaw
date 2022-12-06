@@ -4,9 +4,6 @@ import Sidebar from './Sidebar.js'
 import SearchBar from './SearchBar.js'
 import Profiles from './Profiles.js'
 import Footer from './Footer.js'
-import Article from './Article.js'
-import Filler from './Filler.js'
-import Section from './Section.js'
 
 export {
  Navbar,
@@ -14,8 +11,5 @@ export {
  Hero,
  Profiles,
  SearchBar,
- Article,
- Filler,
- Section,
  Footer,
 }

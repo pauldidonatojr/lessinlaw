@@ -20,7 +20,8 @@ function Filler() {
             display: 'grid',
             justifyContent: 'center',
             placeContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            position: 'relative'
             }}>
             <div style={{ display: 'grid', justifyContent: 'center', alignItems: 'center' }}>
             <div
