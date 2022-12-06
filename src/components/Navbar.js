@@ -5,6 +5,35 @@ import { Link } from 'react-router-dom'
 import { links, social } from '../utils/constants'
 import { useSideContext } from '../context/sidebar_context'
 import { useModalContext } from '../context/modal_context'
+<<<<<<< Updated upstream
+=======
+import CallIcon from '@mui/icons-material/Call';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import { Typography, makeStyles, useTheme, useMediaQuery } from '@material-ui/core';
+
+
+const useStyles = makeStyles(theme => ({
+      nav_links: {
+            width: '100%',
+            position: 'absolute',
+            display: 'grid',
+            alignContent: 'center',
+            alignItems: 'center',
+            placeContent: 'center',
+            justifyContent: 'center',
+            padding: '0.2rem',
+            bottom: '0'
+        },
+      "@media (max-width: 600px)": {
+      nav_links: {
+            visibility: 'hidden'
+        }
+      }
+  }));
+  
+
+>>>>>>> Stashed changes
 
 export default function Navbar() {
  const { openModal } = useModalContext()
@@ -19,6 +48,7 @@ export default function Navbar() {
      </button>
     </div>
 
+<<<<<<< Updated upstream
     <div className="logo-div">
      {/* {social.map((socialIcon) => {
       const { id, url, icon } = socialIcon
@@ -45,6 +75,28 @@ export default function Navbar() {
      >
       Jeffrey R. Lessin & Associates, P.C.
      </h4> */}
+=======
+    <img
+      src="https://res.cloudinary.com/elpawl-llc/image/upload/v1657399779/Jeffrey_R._Lessin_Associates_P.C._1_tyxapa.png"
+      alt="elpawl"
+      className='logo'
+     />
+    <div className='navbar-holder'>
+    <div className="logo-div">
+      </div>
+
+      <Tabs className={classes.nav_links} value={value} onChange={handleChange} centered>
+            {links.map((link) => {
+            const { id, text, url } = link
+            return (
+                        <Tab label={text} to={url} component={Link} >{value}</Tab>
+            )
+            })}
+    </Tabs>
+      
+
+    
+>>>>>>> Stashed changes
     </div>
     <button type="button" className="camera-toggle">
      <a href="tel:+2155991400">
@@ -69,6 +121,7 @@ export default function Navbar() {
 
 const NavContainer = styled.nav`
  height: 10rem;
+<<<<<<< Updated upstream
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -82,6 +135,31 @@ const NavContainer = styled.nav`
 
   position: relative;
  }
+=======
+ left: 0;
+ display: flex;
+
+ .navbar-holder{
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+ }
+
+ .logo-div {
+    
+  }
+
+  .logo {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    position: absolute;
+    objectFit: cover;
+    margin-left: 30%;
+   }
+  
+>>>>>>> Stashed changes
 
  .faIcon:hover {
   opacity: 0.3;
@@ -279,6 +357,23 @@ const NavContainer = styled.nav`
   }
  }
 
+<<<<<<< Updated upstream
+=======
+ @media (max-width: 600px) {
+      navbar-holder:{
+            background-color: black;
+      }
+      .logo {
+        max-width: 100%;
+        max-height: 300px;
+        display: block;
+        position: absolute;
+        objectFit: cover;
+        margin-left: 0%;
+       }
+     }
+
+>>>>>>> Stashed changes
  @media (min-width: 1280px) {
   height: 16rem;
   .logo-div {

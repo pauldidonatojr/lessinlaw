@@ -9,9 +9,37 @@ const Contact = () => {
  }
  return (
   <Wrapper>
-   <div className="contact-section">
-    <div>
-     <form
+   
+
+    <div class="form">
+      <div class="title">Welcome</div>
+      <div class="subtitle">Fill the form we will contact you</div>
+      <div class="input-container ic1">
+        <input id="firstname" class="input" type="text" placeholder=" " />
+        <div class="cut"></div>
+        <label for="firstname" class="placeholder">Name</label>
+      </div>
+      <div class="input-container ic2">
+        <input id="phone" class="input" type="text" placeholder=" " />
+        <div class="cut"></div>
+        <label for="phone" class="placeholder">Phone</label>
+      </div>
+      <div class="input-container ic2">
+        <input id="email" class="input" type="text" placeholder=" " />
+        <div class="cut cut-short"></div>
+        <label for="email" class="placeholder">Email</label>
+      </div>
+
+      <div class="input-container2">
+        <input id="message" class="input" type="text" placeholder=" " />
+        <div class="cut cut-short"></div>
+        <label for="message" class="placeholder">Message</label>
+      </div>
+
+      <button type="text" class="submit">submit</button>
+    </div>
+
+     {/* <form
       className="contact-form"
       onSubmit={handleSubmit}
       style={{ color: 'black' }}
@@ -32,137 +60,147 @@ const Contact = () => {
       <button type="submit" className="btn" disabled={state.submitting}>
        Submit
       </button>
-     </form>
-     <p className="info" style={{ color: 'black' }}>
+     </form> */}
+     {/* <p className="info" style={{ color: 'black' }}>
       Fill out the form and we will be in contact with you shortly!
-     </p>
-    </div>
-   </div>
+     </p> */}
   </Wrapper>
  )
 }
 const Wrapper = styled.section`
- display: grid;
- justify-content: center;
- align-items: center;
+align-items: center;
+background-color:transparent;
+display: flex;
+justify-content: center;
 
- label {
-  font-size: 1.5rem;
- }
+ .form {
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: auto;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
 
- h3 {
-  text-transform: none;
- }
- p {
-  line-height: 2;
-  max-width: 45em;
-  color: var(--clr-grey-5);
- }
- .contact-section {
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  .input-container2 {
+    height: 100px;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 70px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #dc2f55;
+  }
+  
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    // outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
 
-  padding: 1rem;
- }
- .content {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
- }
- p {
-  font-size: 1.25rem;
-  font-family: roboto;
- }
- .contact-form {
-  display: grid;
 
-  align-items: center;
-  justify-content: center;
-  grid-gap: 1rem;
- }
 
- .form-input,
- .submit-btn {
-  font-size: 1rem;
-  padding: 0.2rem 1rem;
-  border: 2px solid var(--clr-black);
- }
- .form-input {
-  color: var(--clr-grey-3);
- }
- textarea {
-  resize: none;
-  border: 2px solid var(--clr-black);
- }
- .submit-btn {
-  border-top-right-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
- }
- .form-input::placeholder {
-  color: var(--clr-black);
-  text-transform: capitalize;
- }
- .submit-btn {
-  background: var(--clr-grey-1);
-  text-transform: capitalize;
-  letter-spacing: var(--spacing);
-  cursor: pointer;
-  transition: var(--transition);
-  color: var(--clr-grey-9);
- }
- .submit-btn:hover {
-  color: var(--clr-white);
- }
- @media (min-width: 576px) {
-  .content {
-   grid-template-columns: 1fr 1fr;
-  }
- }
- @media only screen and (max-width: 600px) {
-  .content {
-   grid-template-columns: 1fr 1fr;
-  }
- }
 
- @media only screen and (min-width: 600px) {
-  .content {
-   grid-template-columns: 1fr 1fr;
-  }
- }
 
- @media only screen and (min-width: 768px) {
-  .content {
-   grid-template-columns: 1fr 1fr;
-  }
- }
- @media (min-width: 992px) {
-  .content {
-   display: grid;
-   align-items: center;
-   gap: 0.5rem;
-   margin-top: 2rem;
-   justify-content: center;
-  }
-  p {
-   margin-bottom: 0;
-  }
-  .info {
-   grid-column: 1/3;
-   grid-row: 1/2;
-  }
-  .contact-form {
-   grid-column: 1/3;
-   grid-row: 2/3;
-   margin-left: 3rem;
-  }
- }
- @media (min-width: 1280px) {
-  .content {
-   grid-template-columns: 1fr 1fr;
-  }
- }
 `
 
 export default Contact
